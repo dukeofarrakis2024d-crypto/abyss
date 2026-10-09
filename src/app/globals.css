@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #131313;
+    --surface-container-highest: #353534;
+    --surface-tint: #ddb7ff;
+    --surface-variant: #353534;
+    --inverse-surface: #e5e2e1;
+    --secondary-fixed-dim: #ddb8ff;
+    --secondary: #ddb8ff;
+    --tertiary: #ddb8ff;
+    --on-secondary: #490081;
+    --on-tertiary-fixed-variant: #6800b4;
+    --on-primary: #490080;
+    --tertiary-fixed-dim: #ddb8ff;
+    --surface-container: #201f1f;
+    --on-error: #690005;
+    --error-container: #93000a;
+    --surface-dim: #131313;
+    --on-primary-fixed: #2c0051;
+    --on-secondary-fixed-variant: #62259b;
+    --on-tertiary-fixed: #2c0051;
+    --on-primary-container: #400071;
+    --on-tertiary-container: #400071;
+    --on-surface: #e5e2e1;
+    --tertiary-fixed: #f0dbff;
+    --error: #ffb4ab;
+    --surface-container-high: #2a2a2a;
+    --outline-variant: #4d4354;
+    --inverse-primary: #842bd2;
+    --on-error-container: #ffdad6;
+    --on-background: #e5e2e1;
+    --secondary-fixed: #f0dbff;
+    --surface-container-low: #1c1b1b;
+    --primary-container: #b76dff;
+    --surface-bright: #393939;
+    --surface: #131313;
+    --on-tertiary: #490080;
+    --primary-fixed: #f0dbff;
+    --secondary-container: #62259b;
+    --on-surface-variant: #cfc2d6;
+    --on-secondary-container: #d1a1ff;
+    --tertiary-container: #b66dff;
+    --primary-fixed-dim: #ddb7ff;
+    --on-secondary-fixed: #2c0051;
+    --surface-container-lowest: #0e0e0e;
+    --outline: #988d9f;
+    --on-primary-fixed-variant: #6900b3;
+    --inverse-on-surface: #313030;
+    --primary: #ddb7ff;
+    --card: #1c1b1b;
+    --foreground: #ffffff;
+    --muted-foreground: #988d9f;
+  }
+}
+
+@theme {
+  --color-card: #1c1b1b;
+  --color-foreground: #ffffff;
+  --color-muted-foreground: #988d9f;
+  --color-background: #131313;
+  --color-surface-container-highest: #353534;
+  --color-surface-tint: #ddb7ff;
+  --color-surface-variant: #353534;
+  --color-inverse-surface: #e5e2e1;
+  --color-secondary-fixed-dim: #ddb8ff;
+  --color-secondary: #ddb8ff;
+  --color-tertiary: #ddb8ff;
+  --color-on-secondary: #490081;
+  --color-on-tertiary-fixed-variant: #6800b4;
+  --color-on-primary: #490080;
+  --color-tertiary-fixed-dim: #ddb8ff;
+  --color-surface-container: #201f1f;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-surface-dim: #131313;
+  --color-on-primary-fixed: #2c0051;
+  --color-on-secondary-fixed-variant: #62259b;
+  --color-on-tertiary-fixed: #2c0051;
+  --color-on-primary-container: #400071;
+  --color-on-tertiary-container: #400071;
+  --color-on-surface: #e5e2e1;
+  --color-tertiary-fixed: #f0dbff;
+  --color-error: #ffb4ab;
+  --color-surface-container-high: #2a2a2a;
+  --color-outline-variant: #4d4354;
+  --color-inverse-primary: #842bd2;
+  --color-on-error-container: #ffdad6;
+  --color-on-background: #e5e2e1;
+  --color-secondary-fixed: #f0dbff;
+  --color-surface-container-low: #1c1b1b;
+  --color-primary-container: #b76dff;
+  --color-surface-bright: #393939;
+  --color-surface: #131313;
+  --color-on-tertiary: #490080;
+  --color-primary-fixed: #f0dbff;
+  --color-secondary-container: #62259b;
+  --color-on-surface-variant: #cfc2d6;
+  --color-on-secondary-container: #d1a1ff;
+  --color-tertiary-container: #b66dff;
+  --color-primary-fixed-dim: #ddb7ff;
+  --color-on-secondary-fixed: #2c0051;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-outline: #988d9f;
+  --color-on-primary-fixed-variant: #6900b3;
+  --color-inverse-on-surface: #313030;
+  --color-primary: #ddb7ff;
+
+  --font-display: 'Outfit', sans-serif;
+  --font-headline-lg: 'Outfit', sans-serif;
+  --font-headline-md: 'Outfit', sans-serif;
+  --font-headline-sm: 'Outfit', sans-serif;
+  --font-title-md: 'Inter', sans-serif;
+  --font-body-lg: 'Inter', sans-serif;
+  --font-body-md: 'Inter', sans-serif;
+  --font-body-sm: 'Inter', sans-serif;
+  --font-label-lg: 'Inter', sans-serif;
+  --font-label-md: 'Inter', sans-serif;
+  --font-label-sm: 'Inter', sans-serif;
+}
+
+/* Material Symbols and base rules */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Utility Classes matching Sketch tokens */
+.font-display { font-family: 'Outfit', sans-serif; }
+.text-display { font-size: 40px; line-height: 48px; letter-spacing: -0.02em; font-weight: 800; }
+.font-headline-lg { font-family: 'Outfit', sans-serif; }
+.text-headline-lg { font-size: 32px; line-height: 40px; letter-spacing: -0.015em; font-weight: 700; }
+.font-headline-md { font-family: 'Outfit', sans-serif; }
+.text-headline-md { font-size: 22px; line-height: 28px; letter-spacing: -0.01em; font-weight: 600; }
+.font-headline-sm { font-family: 'Outfit', sans-serif; }
+.text-headline-sm { font-size: 18px; line-height: 24px; font-weight: 600; }
+.font-title-md { font-family: 'Inter', sans-serif; }
+.text-title-md { font-size: 16px; line-height: 22px; font-weight: 600; }
+.font-body-lg { font-family: 'Inter', sans-serif; }
+.text-body-lg { font-size: 16px; line-height: 26px; font-weight: 400; }
+.font-body-md { font-family: 'Inter', sans-serif; }
+.text-body-md { font-size: 14px; line-height: 22px; font-weight: 400; }
+.font-body-sm { font-family: 'Inter', sans-serif; }
+.text-body-sm { font-size: 12px; line-height: 18px; font-weight: 400; }
+.font-label-lg { font-family: 'Inter', sans-serif; }
+.text-label-lg { font-size: 14px; line-height: 20px; letter-spacing: 0.01em; font-weight: 600; }
+.font-label-md { font-family: 'Inter', sans-serif; }
+.text-label-md { font-size: 12px; line-height: 16px; letter-spacing: 0.02em; font-weight: 600; }
+.font-label-sm { font-family: 'Inter', sans-serif; }
+.text-label-sm { font-size: 10px; line-height: 14px; letter-spacing: 0.04em; font-weight: 700; }
+
+body {
+  background-color: #131313;
+  color: #e5e2e1;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Comic Reader View Image Styles */
+.reader-page-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  /* Force browsers to use sharper downscaling algorithms for high-res manga strips */
+  image-rendering: high-quality;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+
+
+
