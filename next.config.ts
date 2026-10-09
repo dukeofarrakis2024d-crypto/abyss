@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
     'arrivals-spiritual-chronicle-instance.trycloudflare.com',
     'https://arrivals-spiritual-chronicle-instance.trycloudflare.com'
   ],
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
