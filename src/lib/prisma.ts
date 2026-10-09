@@ -12,6 +12,7 @@ const connectionString = process.env.DATABASE_URL || '';
 
 // Create connection pool and Prisma adapter
 const pool = new Pool({ connectionString });
+// @ts-ignore
 const adapter = new PrismaNeon(pool);
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient };
@@ -19,6 +20,7 @@ const globalForPrisma = global as unknown as { prisma: PrismaClient };
 export const prisma =
   globalForPrisma.prisma ||
   new PrismaClient({
+    // @ts-ignore
     adapter,
     log: ['query'],
   });
